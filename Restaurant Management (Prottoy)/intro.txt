@@ -1,0 +1,5 @@
+اعوذ بالله من الشيطان الرجيم 			بسم الله الرحمن الرحيم 			و 			به نستعين		
+This is the folder which contains the source codes written by Brother Sheikh Shamshad Ahmed Prottoy (CSE 52 Batch DIU sec D)
+according to the UML diagrams that I prepared for him.
+
+	Also, it will contain the edits and improvements I have (or will have) made to the source codes.
