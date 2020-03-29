@@ -43,6 +43,11 @@ public class Table {
 	public void toggle(){					// Sets a table free if it is occupied and occupies it if it is free.
 		boolean a = this.getFree(); 
 		this.setFree(!a);
+		System.out.print("Table no."+this.getId()+" is now ");
+		if(this.getFree())
+			System.out.println("available.");
+		else
+			System.out.println("booked.");
 	}
 
     public void display()
@@ -50,11 +55,8 @@ public class Table {
 		System.out.println("Table No."+this.getId());
         System.out.println("Capacity="+this.getCapacity());
         if(this.getFree())
-	    System.out.println("Table is available");
-	else
-	    System.out.println("Table is occupied");
+	    	System.out.println("Table is available");
+		else
+	    	System.out.println("Table is occupied");
     }
-    
-    
-    
 }
