@@ -57,6 +57,6 @@ public class Table {
         if(this.getFree())
 	    	System.out.println("Table is available");
 		else
-	    	System.out.println("Table is occupied");
+	    	System.out.println("Table is occupied"); 
     }
 }
