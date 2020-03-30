@@ -40,9 +40,15 @@ public class Table {
     public boolean getFree(){
     return this.free;
     }
+	
 	public void toggle(){					// Sets a table free if it is occupied and occupies it if it is free.
-		boolean a = this.getFree(); 
+	/*	boolean a = this.getFree(); 		// makes it too damn hard
 		this.setFree(!a);
+	*/	if(this.getFree() == true)			// actually you can just write: "  if(this.getFree())   " instead
+			this.setFree(false);
+		else
+			this.setFree(true);
+		
 		System.out.print("Table no."+this.getId()+" is now ");
 		if(this.getFree())
 			System.out.println("available.");
