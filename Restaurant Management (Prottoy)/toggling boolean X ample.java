@@ -16,8 +16,21 @@ class GFG {
     public void toggle(){
         boolean b = this.getFree();
         this.setFree(!b);
-        //this.setFree(!this.getFree());
+        //this.setFree(!this.getFree());		// this says that we are trying to allocate too much memory.
     }
+	public void toggle2(){
+		if(this.getFree()==true)
+			this.setFree(false);
+		else
+			this.setFree(false);
+    }
+	public void toggle3(){
+		if(this.getFree())
+			this.setFree(false);
+		else
+			this.setFree(false);
+    }
+	
 	public static void main (String[] args) {
 		GFG haba = new GFG();
 		System.out.println(haba.getFree());
