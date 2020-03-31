@@ -53,7 +53,8 @@ public abstract class Employee {
     }
     
     public void setOnDuty(boolean a){                   // How best should we make use of this function and active status of an employee?
-        this.onDuty = a;
+        if(this.onDuty != a)
+            this.onDuty = a;
     }
     
     public void toggleOnDuty(){
@@ -63,7 +64,7 @@ public abstract class Employee {
             this.setOnDuty(true);
     }
     
-    public boolean getSick(){
+    public boolean getSick(){               // returns whether an employee is sick or not
         return sick;
     }
     
@@ -96,11 +97,31 @@ public abstract class Employee {
     public abstract void display();
     public abstract void hire();
     public abstract void fire();
-    public abstract boolean employeesick();
-    public abstract boolean employeevacation();
-    public abstract void hoursperweek();
-    public abstract void payment();
-    public abstract void currentlyonduty();
     
+     
+    public boolean employeesick() {
+       return this.getSick();
+    }
+
+    public boolean employeevacation() {
+        return super.getLeave();
+    }
+
+    public void hoursperweek() {
+        System.out.println("hoursperweek="+hours/7);
+    }
+
+    public void payment() {
+         System.out.println("payment="+super.getSalary());
+    }
+
+    public void currentlyonduty() {
+        super.setOnDuty(true);
+        if(super.getLeave())
+            super.setLeave(false);
+    }
     
+    public void left(){
+        super.setOnDuty(false);
+    }
 }
