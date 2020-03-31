@@ -45,32 +45,7 @@ public class waiter extends Employee {
         System.out.println("fire");
     }
 
-    @Override
-    public boolean employeesick() {
-       boolean b=true;
-       return b;
-    }
-
-    @Override
-    public boolean employeevacation() {
-        boolean b=true;
-        return b;
-    }
-
-    @Override
-    public void hoursperweek() {
-        System.out.println("hoursperweek="+hours/7);
-    }
-
-    @Override
-    public void payment() {
-         System.out.println("payment="+super.getSalary());
-    }
-
-    @Override
-    public void currentlyonduty() {
-        System.out.println("onduty");
-    }
+   
     
     
     
