@@ -116,9 +116,9 @@ public abstract class Employee {
     }
 
     public void currentlyonduty() {
-        super.setOnDuty(true);
-        if(super.getLeave())
-            super.setLeave(false);
+        this.setOnDuty(true);
+        if(this.getLeave())
+            this.setLeave(false);
     }
     
     public void left(){
