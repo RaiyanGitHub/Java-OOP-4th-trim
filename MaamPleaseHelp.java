@@ -43,8 +43,6 @@ _________________________________________________________
 -----------------Problem-----------------------
 Outputs the reference of the objects instead of displaying strings and int.
 Output Sample:
-      [restmanage.Department@99a589, restmanage.Department@372a00, restmanage.Department@dd8dc3]
-Expected Output:
       [(101,"Management"),(201,"Cuisine"),(301,"Errands and Delivery")]
           
 
